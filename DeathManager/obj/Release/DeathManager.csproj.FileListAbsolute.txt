@@ -1,0 +1,9 @@
+C:\Users\conne\source\repos\DeathManager\DeathManager\bin\Release\DeathManager.dll
+C:\Users\conne\source\repos\DeathManager\DeathManager\bin\Release\DeathManager.pdb
+C:\Users\conne\source\repos\DeathManager\DeathManager\bin\Release\Newtonsoft.Json.dll
+C:\Users\conne\source\repos\DeathManager\DeathManager\bin\Release\Newtonsoft.Json.xml
+C:\Users\conne\source\repos\DeathManager\DeathManager\obj\Release\DeathManager.csprojAssemblyReference.cache
+C:\Users\conne\source\repos\DeathManager\DeathManager\obj\Release\DeathManager.csproj.CoreCompileInputs.cache
+C:\Users\conne\source\repos\DeathManager\DeathManager\obj\Release\DeathManager.csproj.CopyComplete
+C:\Users\conne\source\repos\DeathManager\DeathManager\obj\Release\DeathManager.dll
+C:\Users\conne\source\repos\DeathManager\DeathManager\obj\Release\DeathManager.pdb

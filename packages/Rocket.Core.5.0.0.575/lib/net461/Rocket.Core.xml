@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rocket.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Rocket.Core.Commands.CommandParameters">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.#ctor(Rocket.API.DependencyInjection.IDependencyContainer,System.String[])">
+            <param name="container">The IoC container of the <see cref="T:Rocket.API.Commands.ICommandContext">command context</see></param>
+            <param name="parameters">The raw parameters</param>
+        </member>
+        <member name="P:Rocket.Core.Commands.CommandParameters.RawParameters">
+            <summary>
+                The internal stored raw parameter list
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Commands.CommandParameters.Item(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="P:Rocket.Core.Commands.CommandParameters.Length">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.Get``1(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.Get(System.Int32,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.Get``1(System.Int32,``0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.Get(System.Int32,System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.TryGet``1(System.Int32,``0@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.GetArgumentLine(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.GetArgumentLine(System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.TryGet(System.Int32,System.Type,System.Object@)">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.ToArray">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.ToList">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Commands.CommandParameters.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Configuration.ConfigArrayAttribute.#ctor(System.String)">
+            <param name="elementName">The name of the element.</param>
+        </member>
+        <member name="M:Rocket.Core.Configuration.ConfigurationContextExtensions.CreateChildConfigurationContext(Rocket.API.Configuration.IConfigurationContext,System.String)">
+            <summary>
+                Creates a child context.
+            </summary>
+            <param name="childName">The child name.</param>
+            <returns>The child context instance.</returns>
+        </member>
+        <member name="T:Rocket.Core.Configuration.IRocketSettingsProvider">
+            <summary>
+                Provides general settings for RocketMod and its own services.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.IRocketSettingsProvider.Settings">
+            <summary>
+                The RocketMod settings.
+            </summary>
+        </member>
+        <member name="M:Rocket.Core.Configuration.IRocketSettingsProvider.Load">
+            <summary>
+                Loads the settings.
+            </summary>
+        </member>
+        <member name="M:Rocket.Core.Configuration.IRocketSettingsProvider.Reload">
+            <summary>
+                Reloads the settings.
+            </summary>
+        </member>
+        <member name="M:Rocket.Core.Configuration.IRocketSettingsProvider.Save">
+            <summary>
+                Saves the settings.
+            </summary>
+        </member>
+        <member name="T:Rocket.Core.Configuration.RocketSettings">
+            <summary>
+                See <see cref="T:Rocket.Core.Configuration.IRocketSettingsProvider" />.
+            </summary>
+        </member>
+        <member name="T:Rocket.Core.Configuration.LogSettings">
+            <summary>
+                Logging related settings.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.LogLevel">
+            <summary>
+                The log level to show.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.EnableSeparatePluginLogs">
+            <summary>
+                Defines if the plugin loggers should be enabled by default.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.EnableCommandExecutionsLogs">
+            <summary>
+                Defines if command executions should be logged.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.IncludeMethods">
+            <summary>
+                Defines if methods should be included in the logs.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.IgnoreGameLogs">
+            <summary>
+                Defines if the game output should be ignored.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Configuration.LogSettings.ConsoleMode">
+            <summary>
+                Determines console mode.
+                Supported: "ANSI", "RGB", "DEFAULT", "COMPAT"
+            </summary>
+        </member>
+        <member name="T:Rocket.Core.DependencyInjection.DontAutoRegisterAttribute">
+            <summary>
+                Prevents a class from being auto registered for dependency injection.
+            </summary>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.Resolve``1(System.String)">
+            <exception cref="!:NotResolvedException">
+                Thrown when no instance is resolved for the requested Type and
+                Mapping.
+            </exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.Resolve``1(System.String,System.Object[])">
+            <exception cref="!:NotResolvedException">
+                Thrown when no instance is resolved for the requested Type and
+                Mapping.
+            </exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.Resolve(System.Type,System.String)">
+            <exception cref="!:NotResolvedException">
+                Thrown when no instance is resolved for the requested Type and
+                Mapping.
+            </exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.Resolve(System.Type,System.String,System.Object[])">
+            <exception cref="!:NotResolvedException">
+                Thrown when no instance is resolved for the requested Type and
+                Mapping.
+            </exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.ResolveAll``1">
+            <exception cref="!:NotResolvedException">Thrown when no instances are resolved for the requested Type.</exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.ResolveAll``1(System.Object[])">
+            <exception cref="!:NotResolvedException">Thrown when no instances are resolved for the requested Type.</exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.ResolveAll(System.Type)">
+            <exception cref="!:NotResolvedException">Thrown when no instances are resolved for the requested Type.</exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.ResolveAll(System.Type,System.Object[])">
+            <exception cref="!:NotResolvedException">Thrown when no instances are resolved for the requested Type.</exception>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.TryResolve``1(System.String,``0@)">
+            <returns>
+                <value>true</value>
+                when an instance is resolved.
+            </returns>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.TryResolve``1(System.String,``0@,System.Object[])">
+            <returns>
+                <value>true</value>
+                when an instance is resolved.
+            </returns>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.TryResolve(System.Type,System.String,System.Object@)">
+            <returns>
+                <value>true</value>
+                when an instance is resolved.
+            </returns>
+        </member>
+        <member name="M:Rocket.Core.DependencyInjection.UnityDependencyContainer.TryResolve(System.Type,System.String,System.Object@,System.Object[])">
+            <returns>
+                <value>true</value>
+                when an instance is resolved.
+            </returns>
+        </member>
+        <member name="T:Rocket.Core.Eventing.Event">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.Eventing.Event.#ctor(System.Boolean)">
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+        <member name="M:Rocket.Core.Eventing.Event.#ctor(Rocket.API.Eventing.EventExecutionTargetContext,System.Boolean)">
+            <param name="executionTarget">When and where should the event be called? See <see cref="P:Rocket.Core.Eventing.Event.ExecutionTarget" /></param>
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+        <member name="P:Rocket.Core.Eventing.Event.Arguments">
+            <summary>
+                <inheritdoc /><br /><br />
+                In this implementation it contains the properties of the class with their respective values.
+            </summary>
+        </member>
+        <member name="P:Rocket.Core.Eventing.Event.Names">
+            <inheritdoc />
+        </member>
+        <member name="P:Rocket.Core.Eventing.Event.ExecutionTarget">
+            <inheritdoc />
+        </member>
+        <member name="P:Rocket.Core.Eventing.Event.IsGlobal">
+            <inheritdoc />
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.SendLocalizedMessage(Rocket.API.User.IUser,Rocket.API.I18N.ITranslationCollection,System.String,System.Nullable{Rocket.API.Drawing.Color},System.Object[])">
+            <summary>
+                Sends a localized (translatable) message to the user.
+            </summary>
+            <param name="User">The message receiver.</param>
+            <param name="translations">The translations source.</param>
+            <param name="translationKey">The translation key.</param>
+            <param name="arguments">The arguments for the message. See <see cref="M:System.String.Format(System.String,System.Object[])" /></param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.SendLocalizedMessage(Rocket.API.User.IUser,Rocket.API.I18N.ITranslationCollection,System.String,System.Object[])">
+            <summary>
+                Sends a localized (translatable) message to the user.
+            </summary>
+            <param name="User">The message receiver.</param>
+            <param name="translations">The translations source.</param>
+            <param name="translationKey">The translation key.</param>
+            <param name="arguments">The arguments for the message. See <see cref="M:System.String.Format(System.String,System.Object[])" /></param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.SendLocalizedMessage(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,Rocket.API.User.IUser,System.String,System.Nullable{Rocket.API.Drawing.Color},System.Object[])">
+            <summary>
+                Sends a localized message to the given player
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation source.</param>
+            <param name="user">The message receiver.</param>
+            <param name="translationKey">The translation key.</param>
+            <param name="arguments">The arguments for the message.</param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.SendLocalizedMessage(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,Rocket.API.User.IUser,System.String,System.Object[])">
+            <summary>
+                Sends a localized message to the given player
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation source.</param>
+            <param name="user">The message receiver.</param>
+            <param name="translationKey">The translation key.</param>
+            <param name="arguments">The arguments for the message.</param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.BroadcastLocalized(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,System.String,System.Nullable{Rocket.API.Drawing.Color},System.Object[])">
+            <summary>
+                Broadcasts a localized message to all players
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation soruce</param>
+            <param name="translationKey">The key of the translated message to send</param>
+            <param name="arguments">The arguments for the message</param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.BroadcastLocalized(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,System.String,System.Object[])">
+            <summary>
+                Broadcasts a localized message to all players
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation soruce</param>
+            <param name="translationKey">The key of the translated message to send</param>
+            <param name="arguments">The arguments for the message</param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.BroadcastLocalized(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,System.Collections.Generic.IEnumerable{Rocket.API.User.IUser},System.String,System.Nullable{Rocket.API.Drawing.Color},System.Object[])">
+            <summary>
+                Broadcasts a localized message to all players
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation soruce</param>
+            <param name="translationKey">The key of the translated message to send</param>
+            <param name="arguments">The arguments for the message</param>
+        </member>
+        <member name="M:Rocket.Core.I18N.LocalizationExtensions.BroadcastLocalized(Rocket.API.User.IUserManager,Rocket.API.I18N.ITranslationCollection,System.Collections.Generic.IEnumerable{Rocket.API.User.IUser},System.String,System.Object[])">
+            <summary>
+                Broadcasts a localized message to all players
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="translations">The translation soruce</param>
+            <param name="translationKey">The key of the translated message to send</param>
+            <param name="arguments">The arguments for the message</param>
+        </member>
+        <member name="M:Rocket.Core.Permissions.ConfigurationPermissionProvider.BuildPermissionTree(System.String)">
+            <summary>
+                Builds a parent permission tree for the given permission <br />
+                If the target has any of these permissions, they will automatically have the given permission too <br /><br />
+                <b>Example Input:</b>
+                <code>
+            "player.test.sub"
+            </code>
+                <b>Example output:</b>
+                <code>
+            [
+                "*",
+                "player.*",
+                "player.test.*",
+                "player.test.sub"
+            ]
+            </code>
+            </summary>
+            <param name="permission">The permission to build the tree for</param>
+            <returns>The collection of all parent permission nodes</returns>
+        </member>
+        <member name="M:Rocket.Core.Player.Events.PlayerEvent.#ctor(Rocket.API.Player.IPlayer,System.Boolean)">
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+        <member name="M:Rocket.Core.Player.Events.PlayerEvent.#ctor(Rocket.API.Player.IPlayer,Rocket.API.Eventing.EventExecutionTargetContext,System.Boolean)">
+            <param name="executionTarget">When and where should the event be called? See <see cref="!:ExecutionTarget" /></param>
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+        <member name="T:Rocket.Core.Plugins.Events.PluginManagerInitEvent">
+            <summary>
+                This event is before plugin were loaded but after dependencies were set up.
+                It should not be used by plugins itself, only by implementations.<br /><br />
+                Plugins can use <see cref="T:Rocket.Core.Plugins.Events.PluginLoadEvent" /> and <see cref="T:Rocket.Core.Plugins.Events.PluginLoadedEvent" />
+            </summary>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleNextFrame(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedules an action for the next frame on the main thread. See <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.NextFrame" />.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param> 
+            <param name="taskName">The tasks human friendly name.</param> 
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleEveryFrame(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedules an action for all frames on the main thread. See <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.EveryFrame" />.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleNextPhysicUpdate(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedule an action which includes physics interactions (e.g. applying force to an object) for the next physics
+                update. See <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.NextPhysicsUpdate" />.<br />
+                Execution time depends on the engine implemention.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleEveryPhysicUpdate(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedule an action which includes physics interaction (e.g. applying force to an object) for every physics update.
+                See <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.EveryPhysicsUpdate" />.<br />
+                Execution time depends on the engine implemention.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleNextAsyncFrame(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedules an action for all frame on a separate thread. See <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.EveryAsyncFrame" />.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleEveryAsyncFrame(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String)">
+            <summary>
+                Schedules an action for the next frame on a separate thread. See
+                <see cref="F:Rocket.API.Scheduler.ExecutionTargetContext.NextPhysicsUpdate" />.
+            </summary>
+            <param name="action">The action to schedule. Must not block the thread.</param>
+            <param name="owner">The owner of the task.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.Scheduler.SchedulerExtensions.ScheduleDelayed(Rocket.API.Scheduler.ITaskScheduler,Rocket.API.ILifecycleObject,System.Action,System.String,System.TimeSpan,System.Boolean)">
+            <summary>
+                Executes the given task roughly after the given delay.
+            </summary>
+            <param name="object">The owner of the task.</param>
+            <param name="action">The action to schedule. Must not block thread if <i>runAsync</i> equals <b>false</b>.</param>
+            <param name="delay">The delay.</param>
+            <param name="runAsync">Defines if the task should run in a separate thread.</param>
+            <param name="taskName">The tasks human friendly name.</param>
+        </member>
+        <member name="M:Rocket.Core.User.Events.UserEvent.#ctor(Rocket.API.User.IUser,System.Boolean)">
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+        <member name="M:Rocket.Core.User.Events.UserEvent.#ctor(Rocket.API.User.IUser,Rocket.API.Eventing.EventExecutionTargetContext,System.Boolean)">
+            <param name="executionTarget">When and where should the event be called? See <see cref="!:ExecutionTarget" /></param>
+            <param name="global">Defines if the event is emitted globally</param>
+        </member>
+    </members>
+</doc>
