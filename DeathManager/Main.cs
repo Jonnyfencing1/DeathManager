@@ -14,7 +14,7 @@ namespace DeathManager
 {
     public class Main : Plugin<Config>
     {
-        public string DeathLogFile = System.IO.Directory.GetCurrentDirectory() + @"\Plugins\DeathManager\DeathLogs.txt";
+        public string DeathLogFile = Path.Combine(WorkingDirectory, "DeathLogs.txt");
         public Main(IDependencyContainer container) : base("DeathManager", container)
         {
             
